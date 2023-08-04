@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import { AboutSection } from "@/components/Templates/AboutSection";
 import { HeroSection } from "@/components/Templates/HeroSection";
-import { PartenerSection } from "@/components/Templates/PartenerSection";
+import { PartnerSection } from "@/components/Templates/PartnerSection";
 
 export default function HomePage() {
     return (
@@ -22,11 +22,13 @@ export default function HomePage() {
                 <meta property="twitter:description" content="Captcha For Next Generation" />
 
                 <meta property="og:article:author" content="github.com/toothlessdev" />
+
+                <meta name="keywords" content="Captcha, AI Resistence, Luddit, New Captcha, Stabble Diffusion, NLP, Abusing, " />
             </Head>
 
             <HeroSection />
             <AboutSection />
-            <PartenerSection />
+            <PartnerSection />
         </>
     );
 }
