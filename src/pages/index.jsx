@@ -15,7 +15,7 @@ export default function HomePage() {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Luddit Captcha" />
                 <meta property="og:description" content="Captcha For Next Generation" />
-                <meta property="og:url" content="페이지 주소" />
+                <meta property="og:url" content="luddit-captcha.vercel.app" />
 
                 <meta property="twitter:card" content="summary" />
                 <meta property="twitter:title" content="Luddit Captcha" />
