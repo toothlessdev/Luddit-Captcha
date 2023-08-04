@@ -15,7 +15,7 @@ export const Article = ({ align, title, subtitle, description, imgSrc }) => {
                 </div>
 
                 <div className={style.container}>
-                    <Image src={imgSrc}></Image>
+                    <Image src={imgSrc} alt="article"></Image>
                 </div>
             </article>
         );
@@ -25,7 +25,7 @@ export const Article = ({ align, title, subtitle, description, imgSrc }) => {
         return (
             <article className={style.wrapper}>
                 <div className={style.container}>
-                    <Image src={imgSrc}></Image>
+                    <Image src={imgSrc} alt="article"></Image>
                 </div>
 
                 <div className={style.container}>

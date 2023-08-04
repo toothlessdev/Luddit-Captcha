@@ -8,7 +8,7 @@ export const DemoSection = ({ imgSrc, options, onSuccess, onFail, children }) =>
     return (
         <section className={style.section_demo}>
             <div className={style.container}>
-                <Image src={"/demo" + imgSrc} layout="fill" />
+                <Image src={"/demo" + imgSrc} layout="fill" alt="bg-demo" />
             </div>
 
             <div className={style.container}>{children}</div>
@@ -20,7 +20,7 @@ export const DemoLoading = () => {
     return (
         <section className={style.section_demo_skeleton}>
             <div className={style.container_skeleton}>
-                <Image src={"/demo" + imgSrc} layout="fill" />
+                <Image src={"/demo" + imgSrc} layout="fill" alt="bg-demo" />
             </div>
 
             <div className={style.container_skeleton}>{children}</div>
@@ -45,7 +45,7 @@ export const DemoOption = ({ prompt, option, onClickColor }) => {
     useEffect(() => {
         if (option === "success") btnRef.current.addEventListener("click", onSuccess);
         else if (option === "fail") btnRef.current.addEventListener("click", onFail);
-    }, []);
+    }, [option]);
 
     return (
         <div ref={btnRef} className={style.item}>

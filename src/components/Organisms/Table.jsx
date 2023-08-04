@@ -26,7 +26,7 @@ export const TableItem = ({ width, height, itemSize, children }) => {
 
     useEffect(() => {
         itemRef.current.style.width = `${100 / itemSize}%`;
-    }, []);
+    }, [itemSize]);
 
     return (
         <div ref={itemRef} className={style.item} style={{ width: width, height: height }}>

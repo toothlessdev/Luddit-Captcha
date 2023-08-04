@@ -14,10 +14,10 @@ export const Footer = () => {
             <p>for Anti Abusing</p>
 
             <div className={style.contact}>
-                <Image src={iconCall}></Image>
-                <Image src={iconMail}></Image>
-                <Image src={iconFb}></Image>
-                <Image src={iconIg}></Image>
+                <Image src={iconCall} alt="icon-call"></Image>
+                <Image src={iconMail} alt="icon-mail"></Image>
+                <Image src={iconFb} alt="icon-fb"></Image>
+                <Image src={iconIg} alt="icon-ig"></Image>
             </div>
         </footer>
     );

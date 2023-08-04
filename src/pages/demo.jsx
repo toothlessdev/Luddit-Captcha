@@ -34,7 +34,6 @@ export default function DemoPage(props) {
         setAns((ans) => randArr[0]);
         setOptions((options) => Shuffle([...randArr]));
         setIsLoading(false);
-        console.log(options);
     }, []);
 
     if (isLoading) {

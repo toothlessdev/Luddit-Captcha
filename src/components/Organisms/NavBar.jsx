@@ -54,7 +54,7 @@ export const NavBar = () => {
                     </li>
 
                     <li className={style.nav_toggle} onClick={() => setToggle(!toggle)}>
-                        <Image src={iconBars}></Image>
+                        <Image src={iconBars} alt="nav-extend"></Image>
                     </li>
                 </ul>
 

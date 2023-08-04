@@ -41,7 +41,7 @@ export const AboutSection = () => {
                 </div>
 
                 <div className={style.embed_container}>
-                    <Image src={bgEmbed} layout="responsive"></Image>
+                    <Image src={bgEmbed} layout="responsive" alt="bg-embed"></Image>
                 </div>
             </section>
 

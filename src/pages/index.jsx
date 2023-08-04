@@ -8,7 +8,7 @@ export default function HomePage() {
     return (
         <>
             <Head>
-                <title>"Luddit Captcha</title>
+                <title>Luddit Captcha</title>
                 <meta name="description" content="Captcha For Next Generation" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 

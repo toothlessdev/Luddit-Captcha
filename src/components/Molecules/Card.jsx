@@ -5,7 +5,7 @@ export const Card = ({ imgsrc, content }) => {
     return (
         <div className={style.card}>
             <div>
-                <Image src={imgsrc}></Image>
+                <Image src={imgsrc} alt="card"></Image>
             </div>
             <div>
                 <h2>
