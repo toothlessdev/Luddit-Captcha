@@ -17,7 +17,8 @@
     width: 100%;
     aspect-ratio: 1/1;
 
-    margin: 20px;
+    margin: 20px auto;
+    padding: 0px 20px;
 
     img {
         border-radius: 20px;
@@ -56,6 +57,11 @@
     .container {
         justify-content: flex-start;
         gap: 10px;
+        padding: 0px;
+
+        div {
+            height: 180px;
+        }
     }
     .item {
         margin: 20px 0px 0px 0px;
@@ -63,6 +69,9 @@
 }
 
 @media screen and (max-width: 767px) {
-    .section_demo {
+    .container {
+        div {
+            height: 180px;
+        }
     }
 }

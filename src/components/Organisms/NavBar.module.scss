@@ -1,6 +1,8 @@
 @import "@/styles/variables";
 
 .nav_container {
+    z-index: 9999;
+
     width: 100%;
     height: $nav-height;
 
