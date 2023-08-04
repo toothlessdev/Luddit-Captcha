@@ -1,0 +1,21 @@
+@import "@/styles/variables";
+
+.title {
+    color: $color-white;
+}
+
+.sub_title {
+    padding: 20px 0px;
+
+    color: $color-white;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 3rem !important;
+    }
+}

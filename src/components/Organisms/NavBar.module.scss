@@ -1,0 +1,78 @@
+@import "@/styles/variables";
+
+.nav_container {
+    width: 100%;
+    height: $nav-height;
+
+    position: fixed;
+
+    background-color: $nav-bg-color;
+
+    ul {
+        width: min(80%, 1400px);
+        height: 100%;
+
+        margin: 0px auto;
+
+        display: flex;
+        gap: 40px;
+    }
+}
+
+.nav_item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: normal;
+
+    a {
+        display: flex;
+        flex-direction: column;
+
+        color: $color-white;
+    }
+    a:visited {
+        color: $color-white;
+    }
+}
+
+.nav_item_head {
+    @include place-center;
+    font-size: $nav-head-font-size;
+    font-weight: 700;
+
+    a {
+        display: flex;
+        flex-direction: column;
+
+        color: $color-white;
+    }
+    a:visited {
+        color: $color-white;
+    }
+}
+
+.nav_toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+    .nav_item {
+        display: none;
+    }
+    .nav_toggle {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 40px;
+            height: 40px;
+            filter: brightness(100px);
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import "@/styles/variables";
+
+.section_hero {
+    @include section-default;
+
+    display: flex;
+}
+
+.section_hero_container {
+    width: 50%;
+    height: calc(100% - $nav-height);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: $color-white;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    p {
+        padding: 20px 0px;
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    img {
+        object-fit: cover;
+        object-position: center center;
+
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .section_hero_container {
+        width: 100%;
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section_hero_container {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}

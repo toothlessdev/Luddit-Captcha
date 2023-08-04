@@ -1,0 +1,32 @@
+$color-white: #ffffff;
+$color-white-100: #d9d9d9;
+
+$color-dark: #151515;
+
+$nav-height: 80px;
+$nav-head-font-size: 1.5rem;
+$nav-head-font-weight: bold;
+$nav-bg-color: #101010;
+
+$footer-bg-color: #101010;
+
+@mixin place-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin wrapper {
+    width: min(80%, 1400px);
+    margin: 0px auto;
+    background-color: #151515;
+}
+
+@mixin section-default {
+    width: min(80%, 1400px);
+    height: max(calc(100vh - $nav-height), 1200px);
+
+    margin: 0px auto;
+
+    background-color: #151515;
+}

@@ -1,0 +1,27 @@
+@import "@/styles/variables";
+
+.navigate {
+    width: auto;
+    height: 50px;
+    color: $color-white;
+
+    display: flex;
+    align-items: flex-end;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    img {
+        @include place-center;
+        width: auto;
+        height: 60%;
+
+        padding: 0px 10px;
+        fill: $color-white;
+    }
+}
