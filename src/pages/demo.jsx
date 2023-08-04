@@ -54,7 +54,7 @@ export default function DemoPage(props) {
 
                 <DemoSection imgSrc={props.data[ans].imgSrc}>
                     {options.map((element, index) => {
-                        return <DemoOption prompt={props.data[element].prompt} option={element == ans ? "success" : "fail"} />;
+                        return <DemoOption key={index} prompt={props.data[element].prompt} option={element == ans ? "success" : "fail"} />;
                     })}
                 </DemoSection>
             </>
