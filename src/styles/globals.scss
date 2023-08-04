@@ -13,6 +13,11 @@
     scroll-behavior: smooth;
 }
 
+html {
+    width: 100%;
+    min-width: 100vw;
+}
+
 main {
     margin: 0px auto;
     background-color: $color-dark;

@@ -27,15 +27,15 @@ export const NavBar = () => {
                     <li style={{ flexGrow: 1 }} />
 
                     <li className={style.nav_item}>
-                        <Link href="#about">About</Link>
+                        <Link href="/#about">About</Link>
+                    </li>
+
+                    <li className={style.nav_item}>
+                        <Link href="/#pricing">Pricing</Link>
                     </li>
 
                     <li className={style.nav_item}>
                         <Link href="/feature">Feature</Link>
-                    </li>
-
-                    <li className={style.nav_item}>
-                        <Link href="/pricing">Pricing</Link>
                     </li>
 
                     <li className={style.nav_item}>
@@ -60,9 +60,9 @@ export const NavBar = () => {
 
                 {toggle && (
                     <NavList>
-                        <NavListItem href="#about">About</NavListItem>
+                        <NavListItem href="/#about">About</NavListItem>
+                        <NavListItem href="/#pricing">Pricing</NavListItem>
                         <NavListItem href="/feature">Feature</NavListItem>
-                        <NavListItem href="/pricing">Pricing</NavListItem>
                         <NavListItem href="/docs">Docs</NavListItem>
                         <NavListItem href="/demo">Try Demo</NavListItem>
                     </NavList>

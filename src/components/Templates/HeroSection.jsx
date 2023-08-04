@@ -35,7 +35,7 @@ export const HeroSection = () => {
                     <Button
                         type="secondary"
                         onClick={() => {
-                            router.push("/principle");
+                            router.push("/feature");
                         }}
                         styles={{ width: "200px" }}
                     >

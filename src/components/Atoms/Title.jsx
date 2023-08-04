@@ -30,6 +30,21 @@ export const Title = ({ size, styles, align, content }) => {
             </h2>
         );
     }
+
+    if (size === "m") {
+        return (
+            <h2 style={{ textAlign: align, fontSize: "2rem", ...styles }} className={style.title}>
+                {content.map((element, index) => {
+                    return (
+                        <span key={index}>
+                            {element}
+                            <br />
+                        </span>
+                    );
+                })}
+            </h2>
+        );
+    }
 };
 
 export const SubTitle = ({ content }) => {

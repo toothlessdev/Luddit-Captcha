@@ -2,8 +2,9 @@ import Image from "next/image";
 import style from "./AboutSection.module.scss";
 
 import { Card } from "../Molecules/Card";
-import { Title, SubTitle } from "../Atoms/Title";
 import { Navigate } from "../Atoms/Navigate";
+import { Title, SubTitle } from "../Atoms/Title";
+import { Table, TableHead, TableBody, TableGroup, TableItem } from "../Organisms/Table";
 
 import iconShield from "@/assets/icon_shield.png";
 import iconTool from "@/assets/icon_tool.png";
@@ -42,6 +43,34 @@ export const AboutSection = () => {
                 <div className={style.embed_container}>
                     <Image src={bgEmbed} layout="responsive"></Image>
                 </div>
+            </section>
+
+            <section id="pricing" className={style.section_pricing}>
+                <Title styles={{ padding: "50px 0px" }} size="xl" align="center" content={["Pricing"]}></Title>
+
+                <Table>
+                    <TableHead>
+                        <TableGroup>
+                            <TableItem width="100%" height="80px">
+                                Billing Rate
+                            </TableItem>
+                            <TableItem width="100%" height="80px">
+                                Cost
+                            </TableItem>
+                        </TableGroup>
+                    </TableHead>
+
+                    <TableBody>
+                        <TableGroup>
+                            <TableItem width="100%" height="80px">
+                                Per API Call
+                            </TableItem>
+                            <TableItem width="100%" height="80px">
+                                0.001$
+                            </TableItem>
+                        </TableGroup>
+                    </TableBody>
+                </Table>
             </section>
         </>
     );

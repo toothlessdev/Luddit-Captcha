@@ -8,7 +8,7 @@
 
 .section_hero_container {
     width: 50%;
-    height: calc(100% - $nav-height);
+    height: calc(100vh - $nav-height);
 
     display: flex;
     flex-direction: column;
