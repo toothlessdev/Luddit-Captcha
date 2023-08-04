@@ -1,0 +1,68 @@
+@import "@/styles/variables.scss";
+
+.section_demo {
+    @include wrapper;
+
+    display: flex;
+    padding: 100px 0px;
+}
+
+.container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    margin: 20px;
+
+    img {
+        border-radius: 20px;
+    }
+
+    div {
+        @include place-center;
+
+        width: 100%;
+        height: 120px;
+
+        border-radius: 20px;
+        padding: 20px;
+
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $color-white;
+        background-color: $color-dark-100;
+
+        transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $color-dark-200;
+            cursor: pointer;
+        }
+    }
+}
+
+.item {
+}
+
+@media screen and (max-width: 1023px) {
+    .section_demo {
+        flex-direction: column;
+    }
+    .container {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .item {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section_demo {
+    }
+}

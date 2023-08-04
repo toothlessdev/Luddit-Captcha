@@ -1,0 +1,7 @@
+@import "@/styles/variables";
+
+.section {
+    @include wrapper;
+    @include place-center;
+    height: 100vh;
+}

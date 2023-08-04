@@ -16,6 +16,7 @@
 html {
     width: 100%;
     min-width: 100vw;
+    background-color: $color-dark;
 }
 
 main {
@@ -34,4 +35,30 @@ a {
 }
 a:visited {
     text-decoration: none;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(-5px);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes skeleton {
+    from {
+        background: rgb(88, 88, 88);
+        background: linear-gradient(90deg, rgba(88, 88, 88, 1) 0%, rgba(179, 179, 179, 1) 0%, rgba(193, 193, 193, 1) 100%);
+    }
+    to {
+        background: rgb(88, 88, 88);
+        background: linear-gradient(90deg, rgba(88, 88, 88, 1) 0%, rgba(179, 179, 179, 1) 100%, rgba(193, 193, 193, 1) 100%);
+    }
 }
